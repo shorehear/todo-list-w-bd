@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+<form method="POST">
+  <p><center><img src="static/login.png"></center></p>
+  <div class="form-group">
+    <label for="email"> <font size = "6" face ="Arial" color ="blue"> Address </font></label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="email"> <font size = "6" face ="Arial" color ="blue"> Password </font></label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+    />
+  </div>
+  <div align="center">
+    <button type="submit" class="btn btn-primary" ><font size = "4" face = "Arial"> Let me in! </font></button>
+  </div>
+</form>
+{% endblock %}

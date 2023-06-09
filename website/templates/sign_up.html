@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+content %}
+<form method="POST">
+  <p><center><img src="static/sign up.png"></center></p>
+  <div class="form-group">
+    <label for="email"><font face ="Arial" color ="blue" size ="5"> Email Address </font></label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="firstName"><font face ="Arial" color ="blue" size ="5"> Nickname </font></label>
+    <input
+      type="text"
+      class="form-control"
+      id="firstName"
+      name="firstName"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password1"><font face ="Arial" color ="blue" size ="5"> Password </font></label>
+    <input
+      type="password"
+      class="form-control"
+      id="password1"
+      name="password1"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password2"><font face ="Arial" color ="blue" size ="5"> Password (Confirm) </font></label>
+    <input
+      type="password"
+      class="form-control"
+      id="password2"
+      name="password2"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary"><font face ="Arial" size ="4"> Register me! </font></button>
+</form>
+{% endblock %}

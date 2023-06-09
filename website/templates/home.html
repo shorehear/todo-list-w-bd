@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<p><center><img src="static/home.png"></center></p>
+<ul class="list-group list-group-flush" id="tasks">
+  {% for task in user.tasks %}
+  <li class="list-group-item">
+    <font size = "3" face ="Arial" color ="blue">
+    {{ task.data }}
+    </font>
+    <button type="button" class="close" onClick="deleteTask({{ task.id }})">
+      <span aria-hidden="true"> <font size ="2" color = "black" face ="Times New Roman"> Del &times; </font></span>
+    </button>
+  </li>
+  {% endfor %}
+</ul>
+<form method="POST">
+  <textarea name="task" id="task" class="form-control"></textarea>
+  <div align="center">
+    <button type="submit" class="btn btn-primary"><font face = "Arial" size = "4"> Add Task </font></button>
+  </div>
+{% endblock %}
